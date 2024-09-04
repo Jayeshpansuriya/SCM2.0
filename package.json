@@ -1,0 +1,22 @@
+{
+  "name": "scm2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build src/main/resources/static/css/input.css -o src/main/resources/static/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "scm2.0": "file:"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
