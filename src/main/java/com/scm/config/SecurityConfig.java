@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+
 import com.scm.services.impl.SecurityCustomUserDetailService;
 
 @Configuration
@@ -43,7 +44,7 @@ public class SecurityConfig {
     private SecurityCustomUserDetailService userDetailService;
 
     @Autowired
-    private OAuthAuthenicationSuccessHandler handler;
+    private OAuthAuthenticationSuccessHandler handler;
 
     @Autowired
     private AuthFailtureHandler authFailtureHandler;
